@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Home</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0'>
+  </head>
+
+  <body>
+    <nav>
+
+      <img src="icons/burger-menu.svg"
+        alt="burger menu for access to navigation menu">
+      <input type="checkbox" />
+      <ul id="menu">
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Donation</a></li>
+        <li><a href="#">Association </a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+      <a href="#" id="title">Save Social</a>
+
+    </nav>
+    <style>
+      nav {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 1px solid #fca5ff;
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          margin: 10px;
+          padding-left: 0;
+          width: auto;
+          min-height: max(40px, 5vh);
+
+        }
+
+        @media screen and (max-width: 570px) {
+          img {
+            display: block !important;
+          }
+
+          ul {
+            opacity: 0;
+          }
+
+        }
+
+        img {
+          width: auto;
+          min-height: max(40px, 5vh);
+          height: 5vh;
+          color: white;
+        }
+
+        #title {
+          color: white;
+          font-size: 32px;
+          display: block !important;
+          text-decoration: none;
+          background: none;
+        }
+
+
+
+        input {
+          position: absolute;
+          z-index: 2;
+          cursor: pointer;
+          min-height: max(40px, 5vh);
+          height: 5vh;
+          top: 15px;
+          left: 15px;
+          width: 50px;
+          opacity: 0;
+        }
+
+        img {
+          position: absolute;
+          z-index: 0;
+          left: 15px;
+          width: 50px;
+          display: none;
+        }
+
+
+        input:checked+ul {
+          opacity: 1;
+          transform: translate(40%);
+        }
+
+        input:checked~a {
+          opacity: 0;
+        }
+      }
+    </style>
+    <main>
+      <header>
+        <h2>A Safe Place<br>For All</h2>
+        <h3>A new social network for solidarity </h3>
+      </header>
+
+      <ul>
+        <li>Donation taxes less than 0.01%</li>
+        <li>1 problem 1 Association near </li>
+        <li>Look all event online or irl </li>
+        <li>Tell to your community</li>
+        <li>Benefit of crypto for solidarity</li>
+      </ul>
+      <img id="scroll" src="icons/scroll.png"
+        alt="indicate to scroll page">
+    </main>
+    <article>
+      <h3>1. Presentation</h3>
+      <p>
+        Ce projet a pour but de creer un endroit, <strong>
+          un
+          reseau
+          social </strong>comme twitter.
+        Le plus
+        <strong>libre</strong> possible,
+        sans
+        censure, ni trackage avec le minimun de moderation
+        (pour
+        les fakes news , les choses illegales, ect ...)
+      </p>
+      <p>
+        Cette liberte permettra <strong>aux associations ,
+          ONG</strong> de
+        communiquer et de recevoir <strong>des dons</strong>
+        dans un cadre sain.
+        Ou a l'inverse elle permettra aux utilisateurs de
+        <strong>trouver</strong> une association selon leur
+        problemes.
+      </p>
+      <p>Lieu <strong>d'entraide</strong> et de savoir tout
+        le
+        monde pourra s'y
+        ressourcer pour suivre <strong>son combat </strong>
+        ou
+        tout simplement
+        suivre ses abonnements.</p>
+      <p>Pour reduire, le cout de la plateforme et les
+        hacerlements, les <strong>communications</strong> ne
+        pourront qu'etre liker ou
+        disliker pas de commentaires.</p>
+      <p>
+        Pas n'ont plus de mp ou tout autre moyen
+        comunication
+        avec d'autres utilisateurs seulement la possibilite
+        de
+        les <strong>suivre</strong>.
+      </p>
+      <p>
+        Les dons se feront en <strong>crypto</strong> avec
+        les
+        taxes minimun vis
+        a vis de la <strong>blockchain</strong> sela aura
+        pour
+        effet de pouvoir
+        <strong>suivre</strong> ou vont les dons et de
+        permettre
+        une plus grande
+        <strong>liberte d'utilisation</strong>.
+      </p>
+      <p>
+        Le site ne prendra <strong>aucune taxe</strong> de
+        transaction le seul
+        moyen de gagner de l'argent sera que les
+        utilisateurs
+        prennent un abonnement qui leur attribura des
+        avantages
+        comme <strong>discord nitro</strong>. A la fin du
+        mois
+        tout le surplus
+        d'argent sera <strong>redistribue en don</strong>.
+      </p>
+    </article>
+    <article>
+      <h3>X. Technologie Principale</h3>
+      <p>
+        Front end : Framework personel (html, css, js)
+        <br>
+        Alternative : Vue js (html, css, ts)
+      </p>
+      <p>
+        Back end : Bun js + elysia js (ts , js)
+        <br>
+        Alternative : Tokyo (rust)
+      </p>
+    </article>
+
+    <style>
+      * {
+        font-family: 'Pretty neat', Times, sans-serif;
+        font-weight: normal;
+        color: white;
+      }
+
+
+      body {
+        background-color: rgb(30, 30, 30);
+      }
+
+      li {
+        height: auto;
+        margin: 10px;
+        list-style: none;
+      }
+
+      .border {
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+      }
+
+      .mainBackColor {
+        background-color: #00FF80;
+      }
+
+      .secBackColor {
+        background-color: #fca5ff;
+      }
+
+      .mainColor {
+        color: #00FF80;
+      }
+
+      .secColor {
+        color: #fca5ff;
+      }
+
+      a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      a:hover {
+        color: #fca5ff;
+      }
+
+      body {
+        main {
+          border-radius: 10px;
+          margin: 10px;
+          min-height: calc(100vh - (max(40px, 5vh) + 48px) - 10rem);
+          padding-top: 10rem;
+          border-bottom: 1px solid #fca5ff;
+
+          h2 {
+            margin-top: 0;
+            font-size: max(50px, 10vh);
+            color: #fca5ff;
+            margin-bottom: 10px;
+          }
+
+          h2,
+          h3 {
+            text-align: center;
+
+          }
+
+          ul {
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+
+            li {
+              background: rgba(255, 255, 255, 0.2);
+              border-radius: 16px;
+              border: 1px solid #fca5ff77;
+              padding: 10px;
+              width: fit-content;
+            }
+          }
+
+
+
+          header {
+            margin-bottom: 10rem;
+          }
+
+          img {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            animation: 1.5s linear infinite slide;
+          }
+        }
+
+
+
+        article {
+          border-bottom: 1px solid #fca5ff;
+          border-radius: 10px;
+
+          h3 {
+            text-align: center;
+            font-size: xx-large;
+          }
+
+          @media screen and (max-width: 570px) {
+            p {
+              margin-left: 10% !important;
+              width: 80% !important;
+            }
+
+          }
+
+
+          p {
+            margin-left: 25%;
+            width: 50%;
+            font-size: 18px;
+          }
+
+          p:first-letter {
+            margin-left: 20px;
+          }
+        }
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translate(-50%, 0%);
+        }
+
+        50% {
+          transform: translate(-50%, 50%);
+        }
+
+
+        100% {
+          transform: translate(-50%, 0%);
+        }
+      }
+
+      strong {
+        color: #00FF80;
+        font-size: 20px;
+      }
+    </style>
+  </body>
+
+</html>
