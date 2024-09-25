@@ -1,0 +1,21 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bun run --watch framework/src/index.ts",
+    "build": "bun framework/build.js",
+    "prod": "bun framework/build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chokidar": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.10",
+    "bun-types": "^1.1.29"
+  }
+}

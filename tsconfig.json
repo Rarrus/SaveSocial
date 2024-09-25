@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "types": [
+            "bun-types"
+        ],
+        "module": "ES2022",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "moduleResolution": "Bundler",
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "target": "ES2023"
+    },
+} 

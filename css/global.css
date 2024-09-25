@@ -1,0 +1,49 @@
+  * {
+    font-family: 'Pretty neat', Times, sans-serif;
+    font-weight: normal;
+    color: white;
+  }
+
+
+  body {
+    background-color: rgb(30, 30, 30);
+  }
+
+  li {
+    height: auto;
+    margin: 10px;
+    list-style: none;
+  }
+
+  .border {
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+  }
+
+  .mainBackColor {
+    background-color: #00FF80;
+  }
+
+  .secBackColor {
+    background-color: #fca5ff;
+  }
+
+  .mainColor {
+    color: #00FF80;
+  }
+
+  .secColor {
+    color: #fca5ff;
+  }
+
+  a {
+    padding: 10px;
+    text-decoration: none;
+    font-size:  18px;
+  }
+
+  a:hover {
+    color: #fca5ff;
+  }
